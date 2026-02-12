@@ -1,0 +1,50 @@
+<section class="hero bg-gradient-to-br from-blue-500 to-teal-600 text-white py-20 fade-in">
+  <div class="container mx-auto px-4 text-center">
+    <h1 class="text-5xl font-bold mb-4">Empower Your Business with AI</h1>
+    <p class="text-xl mb-8 max-w-2xl mx-auto">Wolfpack is a leading AI consultancy specializing in full-stack AI solutions. We build intelligent applications, from neural network-based systems to cloud-integrated AI platforms, ensuring scalable, ethical, and cutting-edge technology for modern enterprises.</p>
+    <button routerLink="/contact" class="bg-white text-teal-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition transform hover:scale-105">Get Started</button>
+  </div>
+</section>
+
+<section class="py-20 bg-gray-50 dark:bg-gray-800">
+  <div class="container mx-auto px-4">
+    <h2 class="text-4xl font-bold text-center mb-12 text-gray-800 dark:text-white">Our Services</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="card glass neumo p-8 rounded-lg">
+        <h3 class="text-2xl font-semibold mb-4 text-teal-600">AI App Development</h3>
+        <p class="text-gray-600 dark:text-gray-300">Custom AI-powered web and mobile applications using modern frameworks like React, Angular, TensorFlow, and Python. From chatbots to predictive analytics dashboards.</p>
+      </div>
+      <div class="card glass neumo p-8 rounded-lg">
+        <h3 class="text-2xl font-semibold mb-4 text-teal-600">AI Consulting</h3>
+        <p class="text-gray-600 dark:text-gray-300">Expert guidance on AI integration, strategy, and implementation. We assess your data, design neural architectures, and ensure ROI with tailored AI solutions.</p>
+      </div>
+      <div class="card glass neumo p-8 rounded-lg">
+        <h3 class="text-2xl font-semibold mb-4 text-teal-600">Architecture Design</h3>
+        <p class="text-gray-600 dark:text-gray-300">Scalable system designs for AI solutions, including cloud migration (AWS/GCP), data pipelines, and DevOps for seamless AI deployment and monitoring.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-20 bg-white dark:bg-gray-900">
+  <div class="container mx-auto px-4 text-center">
+    <h2 class="text-4xl font-bold mb-8 text-gray-800 dark:text-white">About Wolfpack</h2>
+    <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">We are a team of AI specialists, full-stack developers, cloud architects, and agile facilitators. Founded to democratize AI, Wolfpack delivers end-to-end solutions that bridge innovation and practicality. Our expertise spans machine learning, deep learning, and AI ethics, ensuring your business stays ahead in the AI revolution.</p>
+  </div>
+</section>
+
+<section class="py-20 bg-gray-50 dark:bg-gray-800">
+  <div class="container mx-auto px-4">
+    <h2 class="text-4xl font-bold text-center mb-12 text-gray-800 dark:text-white">Latest from Our Blog</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <article class="card glass neumo p-6 rounded-lg fade-in" *ngFor="let post of latestPosts">
+        <h3 class="text-xl font-semibold mb-2"><a [routerLink]="['/blog', post.slug]" class="text-teal-600 hover:text-teal-800 dark:text-teal-400 dark:hover:text-teal-300">{{post.title}}</a></h3>
+        <p class="text-gray-600 dark:text-gray-300 mb-4">{{post.excerpt}}</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400">By {{post.author}} on {{post.date}}</p>
+      </article>
+    </div>
+    <div class="text-center mt-8">
+      <a routerLink="/blog" class="bg-teal-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-teal-700 transition">View All Posts</a>
+    </div>
+  </div>
+</section>
