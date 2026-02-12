@@ -1,0 +1,40 @@
+.hero {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.services, .about, .blog-preview {
+  padding: 4rem 0;
+}
+
+.services h2, .about h2, .blog-preview h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.about {
+  background: #f8f9fa;
+}
+
+.blog-preview h3 {
+  margin-top: 0;
+}
+
+.blog-preview a {
+  color: #667eea;
+}

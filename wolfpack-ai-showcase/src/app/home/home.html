@@ -1,0 +1,48 @@
+<section class="hero">
+  <div class="container">
+    <h1>Empower Your Business with AI</h1>
+    <p>At Wolfpack, we specialize in building cutting-edge AI applications and providing expert consultation to drive your digital transformation. Our team of skilled developers and architects deliver scalable, innovative solutions tailored to your needs.</p>
+    <button routerLink="/contact">Get Started</button>
+  </div>
+</section>
+
+<section class="services">
+  <div class="container">
+    <h2>Our Services</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>AI App Development</h3>
+        <p>Custom AI-powered web and mobile applications using modern frameworks like React, Angular, and Python.</p>
+      </div>
+      <div class="card">
+        <h3>AI Consultation</h3>
+        <p>Expert guidance on AI integration, strategy, and implementation to maximize your ROI.</p>
+      </div>
+      <div class="card">
+        <h3>Architecture Design</h3>
+        <p>Scalable system designs for AI solutions, including cloud migration and data pipeline architecture.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about">
+  <div class="container">
+    <h2>About Wolfpack</h2>
+    <p>We are a team of passionate AI developers, cloud architects, and Scrum masters dedicated to pushing the boundaries of what's possible with artificial intelligence. With expertise in frontend, backend, and DevOps, we deliver end-to-end solutions that drive real business value.</p>
+  </div>
+</section>
+
+<section class="blog-preview">
+  <div class="container">
+    <h2>Latest from Our Blog</h2>
+    <div class="grid">
+      <article class="card" *ngFor="let post of latestPosts">
+        <h3><a [routerLink]="['/blog', post.slug]">{{post.title}}</a></h3>
+        <p>{{post.excerpt}}</p>
+        <p>By {{post.author}} on {{post.date}}</p>
+      </article>
+    </div>
+    <p><a routerLink="/blog">View all posts</a></p>
+  </div>
+</section>
