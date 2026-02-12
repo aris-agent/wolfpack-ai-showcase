@@ -1,11 +1,10 @@
 import { Component, inject } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { BlogService, BlogPost } from '../blog';
 
 @Component({
   selector: 'app-blog-index',
-  imports: [CommonModule, RouterLink],
+  imports: [RouterLink],
   templateUrl: './blog-index.html',
   styleUrl: './blog-index.scss',
 })
