@@ -1,8 +1,18 @@
-<article *ngIf="post">
-  <h1>{{ post!.title }}</h1>
-  <p class="meta">By {{ post!.author }} on {{ post!.date }}</p>
-  <markdown [data]="post!.content"></markdown>
-</article>
-<div *ngIf="!post">
-  <p>Post not found.</p>
+<div class="min-h-screen bg-gray-50 py-12">
+  <div class="container mx-auto px-4">
+    <article *ngIf="post" class="bg-white rounded-lg shadow-lg overflow-hidden">
+      <img [src]="post!.image" [alt]="post!.title" class="w-full h-64 object-cover">
+      <div class="p-8">
+        <h1 class="text-4xl font-bold mb-4 text-gray-800">{{ post!.title }}</h1>
+        <p class="text-lg text-gray-600 mb-6">By {{ post!.author }} on {{ post!.date }}</p>
+        <div class="prose prose-lg max-w-none">
+          <markdown [data]="post!.content"></markdown>
+        </div>
+      </div>
+    </article>
+    <div *ngIf="!post" class="text-center py-12">
+      <h2 class="text-2xl font-semibold text-gray-700 mb-4">Post not found</h2>
+      <a routerLink="/blog" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">Back to Blog</a>
+    </div>
+  </div>
 </div>

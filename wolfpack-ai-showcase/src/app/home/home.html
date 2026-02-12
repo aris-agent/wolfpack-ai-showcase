@@ -1,48 +1,50 @@
-<section class="hero">
-  <div class="container">
-    <h1>Empower Your Business with AI</h1>
-    <p>At Wolfpack, we specialize in building cutting-edge AI applications and providing expert consultation to drive your digital transformation. Our team of skilled developers and architects deliver scalable, innovative solutions tailored to your needs.</p>
-    <button routerLink="/contact">Get Started</button>
+<section class="bg-gradient-to-br from-blue-500 to-purple-600 text-white py-20">
+  <div class="container mx-auto px-4 text-center">
+    <h1 class="text-5xl font-bold mb-4">Empower Your Business with AI</h1>
+    <p class="text-xl mb-8 max-w-2xl mx-auto">Wolfpack is a dynamic team of AI developers, cloud architects, and Scrum masters dedicated to building innovative AI applications. We specialize in full-stack AI solutions, from intelligent web and mobile apps to advanced trading platforms, ensuring scalable, ethical, and high-performance systems.</p>
+    <button routerLink="/contact" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition transform hover:scale-105">Get Started</button>
   </div>
 </section>
 
-<section class="services">
-  <div class="container">
-    <h2>Our Services</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>AI App Development</h3>
-        <p>Custom AI-powered web and mobile applications using modern frameworks like React, Angular, and Python.</p>
+<section class="py-20 bg-gray-50">
+  <div class="container mx-auto px-4">
+    <h2 class="text-4xl font-bold text-center mb-12">Our Services</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition">
+        <h3 class="text-2xl font-semibold mb-4 text-blue-600">AI App Development</h3>
+        <p class="text-gray-600">Custom AI-powered web and mobile applications using modern frameworks like React, Angular, and Python. From chatbots to analytics dashboards.</p>
       </div>
-      <div class="card">
-        <h3>AI Consultation</h3>
-        <p>Expert guidance on AI integration, strategy, and implementation to maximize your ROI.</p>
+      <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition">
+        <h3 class="text-2xl font-semibold mb-4 text-blue-600">AI Consultation</h3>
+        <p class="text-gray-600">Expert guidance on AI integration, strategy, and implementation. We help maximize ROI with tailored AI solutions for your business needs.</p>
       </div>
-      <div class="card">
-        <h3>Architecture Design</h3>
-        <p>Scalable system designs for AI solutions, including cloud migration and data pipeline architecture.</p>
+      <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition">
+        <h3 class="text-2xl font-semibold mb-4 text-blue-600">Architecture Design</h3>
+        <p class="text-gray-600">Scalable system designs for AI solutions, including cloud migration, data pipelines, and DevOps for seamless AI deployment.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="about">
-  <div class="container">
-    <h2>About Wolfpack</h2>
-    <p>We are a team of passionate AI developers, cloud architects, and Scrum masters dedicated to pushing the boundaries of what's possible with artificial intelligence. With expertise in frontend, backend, and DevOps, we deliver end-to-end solutions that drive real business value.</p>
+<section class="py-20 bg-white">
+  <div class="container mx-auto px-4 text-center">
+    <h2 class="text-4xl font-bold mb-8">About Wolfpack</h2>
+    <p class="text-xl text-gray-600 max-w-3xl mx-auto">We are a passionate team of AI specialists, frontend/backend developers, cloud experts, and agile facilitators. Founded to bridge the gap between AI innovation and practical business applications, Wolfpack delivers end-to-end solutions that drive real value. Our mission is to democratize AI, making advanced technology accessible and impactful for businesses of all sizes.</p>
   </div>
 </section>
 
-<section class="blog-preview">
-  <div class="container">
-    <h2>Latest from Our Blog</h2>
-    <div class="grid">
-      <article class="card" *ngFor="let post of latestPosts">
-        <h3><a [routerLink]="['/blog', post.slug]">{{post.title}}</a></h3>
-        <p>{{post.excerpt}}</p>
-        <p>By {{post.author}} on {{post.date}}</p>
+<section class="py-20 bg-gray-50">
+  <div class="container mx-auto px-4">
+    <h2 class="text-4xl font-bold text-center mb-12">Latest from Our Blog</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <article class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition" *ngFor="let post of latestPosts">
+        <h3 class="text-xl font-semibold mb-2"><a [routerLink]="['/blog', post.slug]" class="text-blue-600 hover:text-blue-800">{{post.title}}</a></h3>
+        <p class="text-gray-600 mb-4">{{post.excerpt}}</p>
+        <p class="text-sm text-gray-500">By {{post.author}} on {{post.date}}</p>
       </article>
     </div>
-    <p><a routerLink="/blog">View all posts</a></p>
+    <div class="text-center mt-8">
+      <a routerLink="/blog" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">View All Posts</a>
+    </div>
   </div>
 </section>
