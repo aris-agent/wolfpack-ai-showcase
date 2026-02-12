@@ -1,46 +1,46 @@
-<section class="bg-gradient-to-br from-blue-500 to-purple-600 text-white py-20">
+<section class="hero">
   <div class="container mx-auto px-4 text-center">
     <h1 class="text-5xl font-bold mb-4">Empower Your Business with AI</h1>
-    <p class="text-xl mb-8 max-w-2xl mx-auto">Wolfpack is a dynamic team of AI developers, cloud architects, and Scrum masters dedicated to building innovative AI applications. We specialize in full-stack AI solutions, from intelligent web and mobile apps to advanced trading platforms, ensuring scalable, ethical, and high-performance systems.</p>
+    <p class="text-xl mb-8 max-w-2xl mx-auto">Wolfpack is a leading AI consultancy specializing in full-stack AI solutions. We build intelligent applications, from neural network-based systems to cloud-integrated AI platforms, ensuring scalable, ethical, and cutting-edge technology for modern enterprises.</p>
     <button routerLink="/contact" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition transform hover:scale-105">Get Started</button>
   </div>
 </section>
 
-<section class="py-20 bg-gray-50">
+<section class="py-20 bg-gray-50 dark:bg-gray-800">
   <div class="container mx-auto px-4">
-    <h2 class="text-4xl font-bold text-center mb-12">Our Services</h2>
+    <h2 class="text-4xl font-bold text-center mb-12 text-gray-800 dark:text-white">Our Services</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition">
+      <div class="bg-white dark:bg-gray-700 p-8 rounded-lg shadow-lg hover:shadow-xl transition">
         <h3 class="text-2xl font-semibold mb-4 text-blue-600">AI App Development</h3>
-        <p class="text-gray-600">Custom AI-powered web and mobile applications using modern frameworks like React, Angular, and Python. From chatbots to analytics dashboards.</p>
+        <p class="text-gray-600 dark:text-gray-300">Custom AI-powered web and mobile applications using modern frameworks like React, Angular, TensorFlow, and Python. From chatbots to predictive analytics dashboards.</p>
       </div>
-      <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition">
-        <h3 class="text-2xl font-semibold mb-4 text-blue-600">AI Consultation</h3>
-        <p class="text-gray-600">Expert guidance on AI integration, strategy, and implementation. We help maximize ROI with tailored AI solutions for your business needs.</p>
+      <div class="bg-white dark:bg-gray-700 p-8 rounded-lg shadow-lg hover:shadow-xl transition">
+        <h3 class="text-2xl font-semibold mb-4 text-blue-600">AI Consulting</h3>
+        <p class="text-gray-600 dark:text-gray-300">Expert guidance on AI integration, strategy, and implementation. We assess your data, design neural architectures, and ensure ROI with tailored AI solutions.</p>
       </div>
-      <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition">
+      <div class="bg-white dark:bg-gray-700 p-8 rounded-lg shadow-lg hover:shadow-xl transition">
         <h3 class="text-2xl font-semibold mb-4 text-blue-600">Architecture Design</h3>
-        <p class="text-gray-600">Scalable system designs for AI solutions, including cloud migration, data pipelines, and DevOps for seamless AI deployment.</p>
+        <p class="text-gray-600 dark:text-gray-300">Scalable system designs for AI solutions, including cloud migration (AWS/GCP), data pipelines, and DevOps for seamless AI deployment and monitoring.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="py-20 bg-white">
+<section class="py-20 bg-white dark:bg-gray-900">
   <div class="container mx-auto px-4 text-center">
-    <h2 class="text-4xl font-bold mb-8">About Wolfpack</h2>
-    <p class="text-xl text-gray-600 max-w-3xl mx-auto">We are a passionate team of AI specialists, frontend/backend developers, cloud experts, and agile facilitators. Founded to bridge the gap between AI innovation and practical business applications, Wolfpack delivers end-to-end solutions that drive real value. Our mission is to democratize AI, making advanced technology accessible and impactful for businesses of all sizes.</p>
+    <h2 class="text-4xl font-bold mb-8 text-gray-800 dark:text-white">About Wolfpack</h2>
+    <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">We are a team of AI specialists, full-stack developers, cloud architects, and agile facilitators. Founded to democratize AI, Wolfpack delivers end-to-end solutions that bridge innovation and practicality. Our expertise spans machine learning, deep learning, and AI ethics, ensuring your business stays ahead in the AI revolution.</p>
   </div>
 </section>
 
-<section class="py-20 bg-gray-50">
+<section class="py-20 bg-gray-50 dark:bg-gray-800">
   <div class="container mx-auto px-4">
-    <h2 class="text-4xl font-bold text-center mb-12">Latest from Our Blog</h2>
+    <h2 class="text-4xl font-bold text-center mb-12 text-gray-800 dark:text-white">Latest from Our Blog</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <article class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition" *ngFor="let post of latestPosts">
-        <h3 class="text-xl font-semibold mb-2"><a [routerLink]="['/blog', post.slug]" class="text-blue-600 hover:text-blue-800">{{post.title}}</a></h3>
-        <p class="text-gray-600 mb-4">{{post.excerpt}}</p>
-        <p class="text-sm text-gray-500">By {{post.author}} on {{post.date}}</p>
+      <article class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg hover:shadow-xl transition" *ngFor="let post of latestPosts">
+        <h3 class="text-xl font-semibold mb-2"><a [routerLink]="['/blog', post.slug]" class="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300">{{post.title}}</a></h3>
+        <p class="text-gray-600 dark:text-gray-300 mb-4">{{post.excerpt}}</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400">By {{post.author}} on {{post.date}}</p>
       </article>
     </div>
     <div class="text-center mt-8">
