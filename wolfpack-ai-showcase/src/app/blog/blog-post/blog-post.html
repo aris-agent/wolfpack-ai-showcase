@@ -1,0 +1,8 @@
+<article *ngIf="post">
+  <h1>{{ post!.title }}</h1>
+  <p class="meta">By {{ post!.author }} on {{ post!.date }}</p>
+  <markdown [data]="post!.content"></markdown>
+</article>
+<div *ngIf="!post">
+  <p>Post not found.</p>
+</div>
